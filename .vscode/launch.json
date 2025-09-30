@@ -1,0 +1,44 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Build Debug APK",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/gradlew",
+            "args": ["assembleDebug"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            }
+        },
+        {
+            "name": "Install Debug APK",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/gradlew",
+            "args": ["installDebug"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            }
+        },
+        {
+            "name": "Run Tests",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/gradlew",
+            "args": ["test"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+name: Feature Request
+description: Suggest a new feature for Our Finances
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please provide as much detail as possible to help us understand your request.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm you have done the following before submitting this feature request.
+      options:
+        - label: I have searched existing issues to ensure this feature hasn't been requested
+          required: true
+        - label: I have checked the project roadmap to see if this feature is already planned
+          required: true
+
+  - type: dropdown
+    id: feature_type
+    attributes:
+      label: Feature Type
+      description: What type of feature is this?
+      options:
+        - New Screen/UI Component
+        - Data Management Enhancement
+        - Analytics/Reporting Feature
+        - User Experience Improvement
+        - Performance Enhancement
+        - Integration Feature
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: Is your feature request related to a problem? Please describe.
+      placeholder: "I'm always frustrated when... / It would be helpful if... / Users need..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like to see implemented.
+      placeholder: "A clear and concise description of what you want to happen."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: Describe any alternative solutions or features you've considered.
+      placeholder: "Alternative approaches that could solve the same problem."
+
+  - type: textarea
+    id: use_cases
+    attributes:
+      label: Use Cases
+      description: Describe specific scenarios where this feature would be useful.
+      placeholder: |
+        1. As a user, I want to...
+        2. When I'm doing X, I need...
+        3. This would help with...
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - Low - Nice to have
+        - Medium - Would be helpful
+        - High - Important for my workflow
+        - Critical - Blocking my usage
+    validations:
+      required: true
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Estimated Complexity
+      description: How complex do you think this feature would be to implement?
+      options:
+        - Low - Simple UI change or minor addition
+        - Medium - Moderate development effort
+        - High - Significant changes or new major component
+        - Unknown - Not sure about the complexity
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Mockups/Designs
+      description: If you have any mockups, wireframes, or design ideas, please share them here.
+      placeholder: Drag and drop image files here or paste image URLs.
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Add any other context, screenshots, or examples about the feature request here.
+      placeholder: Any additional information that would help us understand and implement this feature.

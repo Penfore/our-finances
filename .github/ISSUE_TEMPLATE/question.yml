@@ -1,0 +1,69 @@
+name: Question
+description: Ask a question about Our Finances
+title: "[QUESTION] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question about Our Finances? We're here to help! Please provide as much context as possible.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm you have done the following before asking this question.
+      options:
+        - label: I have read the README and documentation
+          required: true
+        - label: I have searched existing issues and discussions
+          required: true
+
+  - type: dropdown
+    id: question_type
+    attributes:
+      label: Question Type
+      description: What type of question is this?
+      options:
+        - How to use a feature
+        - Development/Contributing question
+        - Architecture/Technical question
+        - Setup/Installation help
+        - General usage question
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: Please describe your question in detail.
+      placeholder: "What would you like to know about Our Finances?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Provide any relevant context that might help us answer your question.
+      placeholder: "What are you trying to accomplish? What have you already tried?"
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment (if relevant)
+      description: If this is a technical question, please provide your development environment details.
+      placeholder: |
+        - Android Studio version:
+        - Kotlin version:
+        - Target Android version:
+        - Device/Emulator info:
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Additional Information
+      description: Any other information that might be relevant to your question.
+      placeholder: "Screenshots, code snippets, or any other helpful information."

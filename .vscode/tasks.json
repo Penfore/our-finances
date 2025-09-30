@@ -1,0 +1,79 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Debug",
+            "type": "shell",
+            "command": "./gradlew",
+            "args": ["assembleDebug"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Build Release",
+            "type": "shell",
+            "command": "./gradlew",
+            "args": ["assembleRelease"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Install Debug",
+            "type": "shell",
+            "command": "./gradlew",
+            "args": ["installDebug"],
+            "group": "build",
+            "dependsOn": "Build Debug",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean Project",
+            "type": "shell",
+            "command": "./gradlew",
+            "args": ["clean"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Unit Tests",
+            "type": "shell",
+            "command": "./gradlew",
+            "args": ["testDebugUnitTest"],
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
