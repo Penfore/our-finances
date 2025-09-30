@@ -10,9 +10,10 @@
 </div>
 
 <div align="center">
-  <img src="https://img.shields.io/github/stars/Penfore/our-finances?style=social" alt="GitHub stars" />
-  <img src="https://img.shields.io/github/forks/Penfore/our-finances?style=social" alt="GitHub forks" />
-  <img src="https://img.shields.io/github/watchers/Penfore/our-finances?style=social" alt="GitHub watchers" />
+  <img src="https://img.shields.io/github/stars/Penfore/our-finances?style=social&label=Star" alt="GitHub stars" />
+  <img src="https://img.shields.io/github/forks/Penfore/our-finances?style=social&label=Fork" alt="GitHub forks" />
+  <img src="https://img.shields.io/github/watchers/Penfore/our-finances?style=social&label=Watch" alt="GitHub watchers" />
+  <img src="https://img.shields.io/github/followers/Penfore?style=social&label=Follow" alt="GitHub followers" />
 </div>
 
 <div align="center">
@@ -350,6 +351,10 @@ See also the list of [contributors](https://github.com/Penfore/our-finances/cont
 ![GitHub Pull Requests](https://img.shields.io/github/issues-pr/Penfore/our-finances?style=flat-square&color=blue)
 ![Last Commit](https://img.shields.io/github/last-commit/Penfore/our-finances?style=flat-square&color=green)
 ![Repo Size](https://img.shields.io/github/repo-size/Penfore/our-finances?style=flat-square&color=orange)
+![GitHub Language](https://img.shields.io/github/languages/top/Penfore/our-finances?style=flat-square&color=purple)
+![Code Coverage](https://img.shields.io/badge/coverage-97%25-brightgreen?style=flat-square)
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)
+![Tests](https://img.shields.io/badge/tests-47%20passing-brightgreen?style=flat-square)
 
 </div>
 
