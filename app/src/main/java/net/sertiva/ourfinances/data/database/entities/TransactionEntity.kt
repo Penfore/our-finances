@@ -16,8 +16,3 @@ data class TransactionEntity(
     val date: LocalDateTime,
     val description: String? = null
 )
-
-enum class TransactionType {
-    INCOME,
-    EXPENSE
-}
