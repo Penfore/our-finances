@@ -15,7 +15,3 @@ data class Transaction(
         get() = if (type == TransactionType.INCOME) amount else -amount
 }
 
-enum class TransactionType {
-    INCOME,
-    EXPENSE
-}
